@@ -1,0 +1,164 @@
+<html>
+
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="beauty.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+</head>
+
+<body>
+
+	<div class="container">
+	
+		<div class="banner">
+		
+			<!-- Main Banner -->
+		 
+			<a href="https://www.kixat.com/electronics-3">
+			
+				<img src="https://i.ibb.co/2FgMmH7/Beauty.png"/>
+			
+			</a>
+		
+		</div>
+		
+    <div class="containerCategoriesMain">
+
+        <div class="swiper" id="swiper2">
+            <div class="swiper-wrapper">
+			
+				<!-- Categories -->
+			
+                <div class="swiper-slide"><a href=""><img src="https://i.ibb.co/3CMMs2g/Beard-care.png" /></div></a>
+                <div class="swiper-slide"><a href=""><img src="https://i.ibb.co/JK7SLG2/Fragrance.png" /></div></a>
+                <div class="swiper-slide"><a href=""><img src="https://i.ibb.co/30mN1j5/Hair-care.png" /></div></a>
+                <div class="swiper-slide"><a href=""><img src="https://i.ibb.co/YtkYdyx/Hair-removal.png" /></div></a>
+                <div class="swiper-slide"><a href=""><img src="https://i.ibb.co/q0Jgr4W/Health-care.png" /></div></a>
+                <div class="swiper-slide"><a href=""><img src="https://i.ibb.co/FYsC11g/Make-up.png" /></div></a>
+                <div class="swiper-slide"><a href=""><img src="https://i.ibb.co/hMx6yCF/Nail-care.png" /></div></a>
+				<div class="swiper-slide"><a href=""><img src="https://i.ibb.co/ctrBWYJ/Skin-care.png" /></div></a>
+
+
+            </div>
+
+            <div class="swiper-pagination swiper-pagination2"></div>
+
+        </div>
+
+    </div>
+	
+	</div>
+	
+	<div class="containerOffers">
+	
+	<div class="backbackground">
+	<p class="title">Special offers</p>
+	</div>
+	
+	    <div class="containerCategoriesMain">
+
+        <div class="swiper" id="swiper3">
+            <div class="swiper-wrapper">
+			
+				<!-- ads -->
+			
+                <div class="swiper-slide"><a href=""><img src="https://i.ibb.co/nbTt4wB/1.png" /></div></a>
+                <div class="swiper-slide"><a href=""><img src="https://i.ibb.co/mSk5sJV/2.png" /></div></a>
+				<div class="swiper-slide"><a href=""><img src="https://i.ibb.co/qpqrVsw/3.png" /></div></a>
+                <div class="swiper-slide"><a href=""><img src="https://i.ibb.co/6DV0NBr/4.png" /></div></a>
+				<div class="swiper-slide"><a href=""><img src="https://i.ibb.co/0JH1d4g/5.png" /></div></a>
+
+
+            </div>
+
+            <div class="swiper-pagination swiper-pagination2"></div>
+
+        </div>
+
+    </div>
+	
+	</div>
+	
+	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper1 = new Swiper('#swiper1', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            // Optional parameters
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+
+            },
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination1',
+                clickable: true,
+            },
+
+
+        });
+        $('#swiper1 .swiper-slide').on('mouseover', function () {
+            swiper1.autoplay.stop();
+        });
+
+        $('#swiper1 .swiper-slide').on('mouseout', function () {
+            swiper1.autoplay.start();
+        });
+
+        var swiper2 = new Swiper("#swiper2", {
+            loop: true,
+            speed: 2000,
+            slidesPerView:4,
+            spaceBetween: 6,
+            pagination: {
+                el: '.swiper2-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2000,
+            },
+        });
+        $('#swiper2 .swiper-slide').on('mouseover', function () {
+            swiper2.autoplay.stop();
+        });
+
+        $('#swiper2 .swiper-slide').on('mouseout', function () {
+            swiper2.autoplay.start();
+        });
+            
+		
+		
+		
+		        var swiper3 = new Swiper("#swiper3", {
+            loop: true,
+            speed: 3000,
+            slidesPerView:5,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper3-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+            },
+        });
+        $('#swiper3 .swiper-slide').on('mouseover', function () {
+            swiper3.autoplay.stop();
+        });
+
+        $('#swiper3 .swiper-slide').on('mouseout', function () {
+            swiper3.autoplay.start();
+        });
+    </script>
+</body>
+
+</html>
