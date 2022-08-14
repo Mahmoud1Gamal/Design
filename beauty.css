@@ -6,8 +6,8 @@
 	grid-auto-flows: dense;
 	justify-content: center;
 	grid-gap: 5px;
-
 	padding-bottom: 6px;
+	
 
 }
 
@@ -50,9 +50,8 @@
 	background: #c60001;
 }
 .banner{
+object-fit: fill;
+grid-area: banner;
+		align-items: center;
 	justify-content: center;
-	position: relative;
-	text-align: center;
-	width: 1250;
-	
 }
