@@ -1,0 +1,58 @@
+.containerCategoriesMain {
+	position: relative;
+	text-align: center;
+	display: grid;
+	grid-auto-flows: dense;
+	justify-content: center;
+	/*grid-gap: 5px;*/
+	padding-bottom: 6px;
+	/*margin-left: -5px;*/
+	padding-top:6px
+
+}
+
+.containerOffers, .title{
+	
+	text-align: center;
+	font-size: 35px;
+	font-family: montserrat;
+	font-weight: bolder;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 15px;
+	padding-top: 1px;
+	
+}
+
+.backbackground{
+
+}
+
+.containerOffers{
+	
+	background-color: #f6f6e5;
+}
+
+.swiper{
+	width: 100%;
+	height: fit-content;
+	grid-area:swiper;
+}
+.swiper-slide img{
+	width: 100%;
+	grid-area: swiper-slider;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+	color: #f3f3f3;
+}
+.swiper .swiper-pagination-bullet-active{
+	background: #c60001;
+}
+.banner{
+object-fit: fill;
+grid-area: banner;
+		align-items: center;
+	justify-content: center;
+	
+}
